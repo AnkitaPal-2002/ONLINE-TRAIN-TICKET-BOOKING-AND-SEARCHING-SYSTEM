@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe UI',sans-serif;
+    box-sizing: boarder-box;
+    outline: none;
+    text-decoration: none;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg,#057022 0%,#a379db 50%, #e68fda 50%, #054464 100%);
+}
+.box{
+    position: relative;
+    padding: 50px;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(6, 6, 6, 0);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+select{
+    list-style: none;
+    background: #6b0563;
+    color: rgb(237, 241, 160);
+}
+select option{display: inline-block;
+    background: #181b94;
+
+}
+
+.box .inputbox input[type="submit"]{
+    background: #90d71d;
+    color: rgb(5, 53, 25);
+    max-width: 200px;
+    padding: 8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe UI',sans-serif;
+    box-sizing: boarder-box;
+    outline: none;
+    text-decoration: none;
+}
+.container{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+.container form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(9, 63, 117);
+    background: rgb(136, 194, 235);
+    text-align: center;
+}
+.container form font{
+    font-size: 40px;
+    
+    margin-bottom: 10px;
+    color: rgb(247, 246, 251);
+}
+.container form input{
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: rgb(251, 251, 251);
+}
+.container form select{
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: rgb(251, 251, 251);
+}
+.container form button{
+    background-color: rgb(225, 135, 46);
+    font-size: 20px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}

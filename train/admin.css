@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: boarder-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(10, 10, 10);
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: rgb(10, 11, 11);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 380px;
+    height: 420px;
+    left:-50%;
+    background: linear-gradient(0deg,transparent,transparent,rgb(57, 199, 224),rgb(54, 138, 228),rgb(86, 182, 233));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 380px;
+    height: 420px;
+    left:-50%;
+    background: linear-gradient(0deg,transparent,transparent,rgb(95, 206, 228),blue,blue);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.boarderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+
+}
+.boarderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 380px;
+    height: 420px;
+    left:-50%;
+    background: linear-gradient(0deg,transparent,transparent,rgb(200, 47, 220),rgb(172, 46, 162),rgb(116, 43, 155));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;    
+    animation-delay: -1.5s;
+}
+.boarderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 380px;
+    height: 420px;
+    left:-50%;
+    background: linear-gradient(0deg,transparent,transparent,rgb(200, 47, 220),rgb(172, 46, 82),rgb(116, 43, 155));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}    
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: rgb(24, 23, 23);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box from h2{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.box form .inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: rgb(8, 7, 7);
+    font-size: 1em;
+    letter-spacing: 0.05cm;
+    z-index: 10;
+    transition: 0.5s;
+}
+.box form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: aliceblue;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span{
+    color: aliceblue;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box  form .inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputbox input:valid ~ i,
+.box form .inputbox input:focus ~ i
+{
+height: 44px;
+
+}
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 0.75em;
+    padding: 9px 25px;
+    background: rgb(243, 242, 239);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 60;
+    width: 30px;
+    margin-top: 10px;
+}
+.box form .inputbox input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: orange;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+.box form input[type=submit]:active{
+
+    opacity: 0.8;
+
+}

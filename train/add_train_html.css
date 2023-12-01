@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    }
+    body{
+        background: url("2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    div.main{
+        
+        width: 50%;
+        margin: 100px;
+        padding: 10px;
+    }
+    h2{
+        text-align: center;
+        padding: 20px;
+        font-family: sens-serif;
+    }
+    div.register{
+        background-color: rgba(233, 224, 224, 0.5);
+        width: 1000px;
+        font-size: 18px;
+        border-radius: 10px;
+        border:1px soid rgba(223, 215, 215, 0.3);
+        box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+        color: #100c0c;
+    }
+    form#register{
+    
+        margin: 40px;
+    }
+    label{
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italio;
+    }
+    input#name{
+        width: 300px;
+        border: 1px solid #be5e5e;
+        border-radius: 3px;
+        outline: 0;
+        padding: 7px;
+        background-color: #130f0f;
+        box-shadow: inset 1px 1px 5px 
+        rgba(0,0,0,0.3);
+    }
+    input[type=submit]{
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+        border-radius: 3px;
+        background-color: rgba(236, 132, 63, 0.8);
+        color: #141212;
+        cursor: pointer;
+        border: 1px solid rgba(31, 20, 20, 0.3);
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        margin-bottom: 20px;
+    }
+    label,h2{
+    
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }

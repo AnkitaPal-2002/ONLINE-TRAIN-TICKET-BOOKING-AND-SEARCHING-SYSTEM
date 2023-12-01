@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background: rgb(35, 180, 209);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner{
+    min-height: 80vh;
+    background: -o-linear-gradient(rgba(39, 186, 219, 0.5),rgba(0,0,0,0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(35, 180, 209);
+    padding-bottom: 90px;
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 400px 400px;
+
+}
+.card-img{
+    background: url('tic.jpg')center / cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-container{
+    background: rgb(250, 251, 252);
+    height: 270px;
+
+}
+.card-content h3{
+    text-align: center;
+    color: black;
+    padding: 20px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+
+}
+form input[type=submit]{
+    color: rgb(255, 255, 255);
+background: rgb(10, 115, 115);
+}

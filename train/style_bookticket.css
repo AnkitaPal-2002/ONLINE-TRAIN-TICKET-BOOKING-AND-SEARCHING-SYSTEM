@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-image: url("gw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner{
+    min-height: 100vh;
+    background: -o-linear-gradient(rgba(211, 38, 38, 0.5),rgba(0,0,0,0.5)),url("t.jpg")cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(25, 88, 143);
+    padding-bottom: 20px;
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+
+}
+.card-img{
+    background: url('ot.jpeg')center / cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-container{
+    background: rgb(250, 251, 252);
+    height: 390px;
+
+}
+.card-content h3{
+    text-align: center;
+    color: black;
+    padding: 20px 0 10px 0;
+    font-size: 26px;
+    font-weight: 200;
+
+}
+form input[type=submit]{
+    color: rgb(214, 14, 94);
+background: rgb(247, 172, 32);
+}

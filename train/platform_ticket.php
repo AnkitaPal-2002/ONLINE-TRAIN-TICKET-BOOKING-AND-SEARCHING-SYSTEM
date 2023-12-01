@@ -1,0 +1,75 @@
+<?php
+include("conn.php");
+session_start();
+$user=$_SESSION['puser'];
+$sql="select * from passenger where username='$user'";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_assoc($result);
+echo "<h1 style='color: white;'><center>WELCOME ".$row['firstname']." ".$row['lastname']."</h1></center><br>";
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ticket booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="platform_ticket.css">
+    </head>
+    <body>
+        <section class="banner">
+         <font face="Arial MT" size="6px" color="white"><h2>ONLINE TICKET</h2></font>
+            <div class="card-container">
+           
+                <div class="card-img"></div>
+                <div class="card-content">
+                    <font face="Arial MT" size="4px"><h3>Platform Booking</h3>
+                    <form action="print_ticket.php" method="post" >
+                         <div class="form-row">
+               <center>             
+
+Station name
+        <select name="station" id="depart">
+	<option value="choose">Choose a station</option>
+       <option value="stn">Sealdah</option>
+      <option value="stn">Bidhan Nagar Road</option>
+      <option value="stn">Dumdum Junction</option>
+      <option value="stn">Belgharia </option>
+      <option value="stn">Agarpara </option>
+      <option value="stn">Sodepur </option>
+      <option value="stn">khardah </option>
+      <option value="stn">Titagarh </option>
+      <option value="stn">Barrackpore </option>
+      <option value="stn">Palta</option>
+      <option value="stn">Ichapur </option>
+      <option value="stn">Shyamnagar </option>
+      <option value="stn">Jagadal </option>
+      <option value="stn">Kankinara </option>
+      <option value="stn">Naihati Junction </option>
+	<option value="stn">Dumdum cantt.</option>
+      <option value="stn">Durganagar</option>
+      <option value="stn">Birati</option>
+      <option value="stn">Bisharpara Kodalia</option>
+      <option value="stn">New Barrackpore</option>
+      <option value="stn">Madhyamgram</option>
+      <option value="stn">Hridaypur</option>
+	<option value="stn">Barasat</option>
+	
+                            </select>
+<br>                              
+                         </div>   <br>    
+                         <div class="form-now">
+                        <center> &nbsp;  
+                            Adult(s):
+    <input type="number" class="input"  required><br><br>
+    &nbsp; Child(ren):
+    <input type="number" class="input"  required><br>
+  &nbsp;  &nbsp;  &nbsp;    &nbsp; &nbsp;&nbsp;&nbsp; <br>
+  <center>  <input type="submit" name="submit" value="Book Ticket" style="width: 80px; height: 40px;">
+                <br>    </form>
+                </div></div>
+        </section>
+    </center>
+    </body>
+</html>

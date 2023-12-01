@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sign up</title>
+<link rel="stylesheet" type="text/css" href="signup_passanger.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+<h2>Signup</h2>
+<form id="register" method="post" action="signup_passenger_form.php" target="_blank">
+    &nbsp;&nbsp;&nbsp;
+    <label>Enter your First Name:</label>&nbsp;
+<input type="text" name="firstname" placeholder="Enter your first name"  size="50" required>
+<br><br>  &nbsp;&nbsp;&nbsp;
+<label >Enter your Last Name:</label>&nbsp;
+<input type="text" name="lastname" placeholder="Enter your Last name" size="50" required><br><br>
+&nbsp;&nbsp;
+<label >Gender:</label>&nbsp;
+<input type="radio" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" name="gender" value="female">
+<label for="female">Female</label>
+<input type="radio" name="gender" value="others">
+<label for="others">Others</label>
+<br><br>  &nbsp;&nbsp;&nbsp;
+<label for="DOB">Enter your date Of birth:</label>
+<input type="date" name="dob" placeholder="dd/mm/yyyy" size="50" required><br><br>  &nbsp;&nbsp;&nbsp;
+<label for="age">Enter your age:</label>&nbsp;
+<input type="number" name="age"  size="50" placeholder="How old are you?" required><br><br>  &nbsp;&nbsp;&nbsp;
+<label for="email">Enter your email ID:</label>&nbsp;
+<input type="email" placeholder="Enter Email ID" name="email" size="50" required><br><br>    &nbsp;&nbsp;&nbsp;
+<label for="idcard">Please select your Govt ID card name :</label>
+<input type="radio" name="idcard" value="ADHAAR CARD">
+<label for="ADHAAR CARD">Adhar Card</label>
+<input type="radio" name="idcard" value="PAN CARD">
+<label for="PAN CARD">PAN Card</label>
+<input type="radio" name="idcard" value="VOTER CARD">
+<label for="VOTER CARD">Voter Card</label>
+&nbsp;&nbsp;&nbsp;<br><br> &nbsp;&nbsp;&nbsp;
+<label for="cardno">Enter ID Card Number:</label>&nbsp;
+<input type="text" placeholder="Enter ID Card Number " name="cardno" size="50" required><br><br>  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<label for="address">Address:</label>   &nbsp; &nbsp;
+<textarea rows="2" cols="30" name="address"></textarea><br><br>
+&nbsp;&nbsp;&nbsp;
+<label for="phone">Enter your contact no : </label>&nbsp;
+<input type="text" name="phone" placeholder="Enter your contact number please " size="40" required><br><br>
+&nbsp;&nbsp;&nbsp;
+<label for="username">Enter your username : </label>&nbsp;
+<input type="text" name="username" placeholder="Enter your username please" size="40" required><br><br>
+
+&nbsp;&nbsp;&nbsp;
+
+<label for="password"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New password :</label>&nbsp;
+<input type="password" name="password" placeholder=" Enter New Password" size="40" required><br><br>
+
+<label for="security_question">Choose your security question : </label>
+<select name="security_question" id="security_question" required>
+    <option value="Choose a question">Choose a question</option>
+    <option value="What was the name of your primary school ?">What was the name of your primary school ?</option>
+    <option value="What is your pet's name?">What is your pet's name?</option>
+    <option value="What is your favorite movie?">What is your favorite movie?</option>
+    <option value="What is your favorite color?">What is your favorite color?</option>
+    <option value="What is the name of your favorite book?">What is the name of your favourite book?</option>
+</select>
+
+<br> <br>
+    <label for="security_answer">Write your security answer : </label>
+    <input type="text" name="security_answer" placeholder="Please fill this" size="40px">
+    <br><br>
+<center>
+ <input type="submit" class="submit" value="submit" name="submit" size="40"><br>
+ <br>
+ Already signed up?<a href="passenger_login.html" style="color: rgb(199, 177, 236);">  Login here</a></label>
+</center>
+</div><br><br>
+</form>
+</body>
+</html>

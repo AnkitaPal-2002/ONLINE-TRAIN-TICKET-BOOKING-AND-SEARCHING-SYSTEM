@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Train details add page</title>
+<link rel="stylesheet" href="style_add_train_html.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+<h2>Train Details</h2>
+<form id="register" method="post" action="train_add_1.php">
+<label for="train_no">Enter the train no.:</label>
+<input type="number" name="train_no">  <br><br>  
+<label>Train Name:</label>
+<input type="text" name="name"  placeholder="Train name" maxlength="200" width="600px"  ><br><br>
+<label>Enter source:</label>
+<input type="text" name="source" placeholder="Source station" required><br><br>
+<label>Enter destination:</label>
+<input type="text" name="destination" placeholder="Destination station" required><br><br>
+<label for="bogi">Enter the number of the bogi : </label>
+<input type="radio" name="bogi" value="9">
+<label>9</label>
+<input type="radio" name="bogi" value="12">
+<label>12</label>
+<br><br>
+<label>Type of train:</label>
+<input type="radio" value="local" name="type">
+<label>Local</label>
+<input type="radio" value="galloping" name="type">
+<label>Galloping</label>
+<br><br>
+
+<label>Enter the line:</label>
+<input type="radio" value="Main" name="line">
+<label>Main</label>
+<input type="radio" value="Cod" name="line">
+<label>Cod</label>
+<br><br>
+
+<label>Choose the direction:</label>
+<input type="radio" value="UP" name="direction">
+<label>UP</label>
+<input type="radio" value="DOWN" name="direction">
+<label>DOWN</label>
+<br><br>
+
+<label>Enter depurture time:</label>&nbsp;
+<input type="time" name="departure_time" required>
+<br><br>
+
+<label>Enter arrival time:</label>
+<input type="time" name="arrival_time" required><br><br>
+
+<label for="route">Enter the name of the halt stations :</label>
+<textarea name="route" placeholder="Please fill this" required></textarea>
+
+<br><br>
+
+ <input type="submit" class="submit" name="submit" value="ADD TRAIN"><br>
+
+ 
+</div>
+</form>
+</body>
+</html>
